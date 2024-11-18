@@ -1,0 +1,42 @@
+# Byte-compiled and cache files
+__pycache__/
+*.py[cod]
+
+# Virtual environment directories
+venv/
+.env/
+
+# Logs and temporary files
+*.log
+*.tmp
+*.swp
+
+# Ignore development and test files
+tests/
+*.pytest_cache/
+coverage/
+coverage.xml
+*.cover
+
+# Ignore build artifacts
+build/
+dist/
+*.egg-info/
+
+# Ignore IDE and editor files
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Ignore version control files
+.git/
+.gitignore
+
+# Environment and configuration
+.env
+secrets/
+
+assets/
+Dockerfile
+docker-compose.yml
