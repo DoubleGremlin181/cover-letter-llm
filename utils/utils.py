@@ -1,6 +1,6 @@
-from langchain.document_loaders import AsyncChromiumLoader
-from PyPDF2 import PdfReader
-from langchain.document_transformers import Html2TextTransformer
+from langchain_community.document_loaders import AsyncChromiumLoader
+from pypdf import PdfReader
+from langchain_community.document_transformers import Html2TextTransformer
 from agents.gpt_35_turbo import get_agent
 from prompts import job_listing_prompt
 
