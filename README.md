@@ -39,23 +39,22 @@ git clone https://github.com/DoubleGremlin81/cover-letter-llm.git
 cd cover-letter-llm
 ```
 
-### Install Dependencies
-
-```bash
-poetry install
-```
-
 ### Create a `.env` File
 
 ```bash
 echo "OPENAI_API_KEY=<your-openai-api-key>" >> .env
 ```
 
+### Build the Docker Container
+
+```bash
+docker build -t cover-letter-llm .
+```
 
 ### Run the Application
 
 ```bash
-poetry run streamlit run app.py
+docker run --env-file .env cover-letter-llm
 ```
 
 ## Screenshots
